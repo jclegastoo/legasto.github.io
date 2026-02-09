@@ -1,28 +1,81 @@
+body {
+    margin: 0;
+}
+
 .flex-container {
     display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: red;
-    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #0a0e27;
+    flex-wrap: wrap;                
+    padding: 65px;
+    box-sizing: border-box;
 }
 
 .nav_bar {
     display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(255, 0, 200);
+    align-items: center;
+    padding: 20px;
+    background-color: #0f172a;
     flex-direction: row;
+    border-bottom: 2px solid #1e293b;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.flex-container2 {
+.nav_bar span {
+    color: white;
+    font-size: 18px;
+}
+
+.nav_bar .nav_links {
+    margin-left: auto;
     display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0, 255, 51);
-    flex-direction: row;
+    gap: 20px;
 }
-.flex-item {
-    border-style: solid;
-    border-width: 2px;
-    border-color: red;
+
+.nav_bar .nav_links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
+
+.text-container {
+    flex: 1 1 300px;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+.title {
+    color: white;
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.about-me {
+    color: #bfdbfe;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.autobiography {
+    color:#dbeafe;
+    font-size: 23px;
+}
+
+.picture {
+    flex: 0 0 50%;
+    max-width: 500px;
+    width: 100%;                    
+    height: auto;
+    border-radius: 10%;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.facebook-logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
