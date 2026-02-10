@@ -17,8 +17,7 @@ body {
 
 .flex-container2 {
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    flex-direction: column;
     width: 100%;
     background-color: #0f172a;
     padding: 65px;
@@ -88,7 +87,7 @@ body {
     font-family: 'ClashDisplay-Light';
     color:#dbeafe;
     font-size: 23px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 .picture {
@@ -145,13 +144,204 @@ body {
 }
 
 .text-container2{
-    text-align: center;
+    align-self: center;
 }
 
 #skills {
     font-family: 'ClashDisplay-Bold';
     color: white;
-    font-size: 50px;
+    font-size: 65px;
     margin-top: 5px;
 }
+
+.elements {
+    align-self: flex-start;
+}
+
+#frontend {
+    font-family: 'ClashDisplay-Semibold';
+    color: white;
+    font-size: 40px;
+    border: 2px solid #bfdbfe;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.frontend-langs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 87px;                             /* space between badges */
+    margin-top: 10px;
+}
+
+.skill-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.frontend-langs span {
+    border: 3px solid #bfdbfe;
+    font-family: 'ClashDisplay-Semibold';
+    font-size: 28px;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+.frontend-langs span:hover {
+    box-shadow: 0 0 15px 6px rgb(116, 165, 243); 
+    transition: box-shadow 0.1s ease-in-out; 
+    cursor: pointer;
+    transform: translateY(-5px); 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#html {
+    display: flex;             
+    flex-direction: column;    
+    align-items: center;       
+    gap: 10px;                
+    width: 500px;     
+         
+}
+
+#html img {
+    width: 100px;   
+    height: 100px;  
+}
+
+#css {
+    display: flex;             
+    flex-direction: column;    
+    align-items: center;       
+    gap: 10px;                
+    width: 500px;              
+}
+
+#css img {
+    width: 75px;   
+    height: 100px;  
+}
+
+#reactjs {
+    display: flex;             
+    flex-direction: column;    
+    align-items: center;       
+    gap: 10px;                
+    width: 500px;              
+}
+
+#reactjs img {
+    width: 130px;   
+    height: 100px;  
+}
+
+#C {
+    display: flex;             
+    flex-direction: column;    
+    align-items: center;       
+    gap: 10px;                
+    width: 500px;              
+}
+
+#C img {
+    width: 90px;   
+    height: 100px;  
+}
+
+#java {
+    display: flex;             
+    flex-direction: column;    
+    align-items: center;       
+    gap: 10px;                
+    width: 500px;              
+}
+
+#java img {
+    width: 60px;   
+    height: 90px;  
+}
+
+#python {
+    display: flex;             
+    flex-direction: column;    
+    align-items: center;       
+    gap: 10px;                
+    width: 500px;              
+}
+
+#python img {
+    width: 90px;   
+    height: 85px;  
+}
+
+#r {
+    display: flex;             
+    flex-direction: column;    
+    align-items: center;       
+    gap: 10px;                
+    width: 500px;              
+}
+
+#r img {
+    width: 70px;   
+    height: 70px;  
+}
+
+#nodejs {
+    display: flex;             
+    flex-direction: column;    
+    align-items: center;       
+    gap: 10px;                
+    width: 500px;              
+}
+
+#nodejs img {
+    width: 90px;   
+    height: 70px;  
+}
+
+.frontend-langs .skill-name,
+.frontend-langs .skill-desc {
+    border: none !important;
+    padding: 0;
+}
+
+.frontend-langs .skill-name:hover, .skill-desc:hover {
+    box-shadow: none !important;
+    transition: none !important;
+    cursor: none;
+}
+
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+    gap: 15px;
+    width: 500px;
+    padding: 10px;   
+    border: none;   
+}
+
+.skill-name {
+    font-weight: 600;
+    border: none;
+}
+
+.skill-desc {
+    font-family: 'ClashDisplay-Regular' !important;
+    text-align: center;
+    font-size: 23px !important;
+    border: none;
+}
+
+
+
+
 
