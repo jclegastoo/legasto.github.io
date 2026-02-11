@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    padding-top: 80px;
 }
 
 .flex-container {
@@ -25,17 +26,35 @@ body {
     flex-wrap: nowrap; 
 }
 
+.rectangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    width: 100%;
+    background-color: #0f172a;
+    padding: 100px;
+    box-sizing: border-box;
+    flex-wrap: nowrap; 
+}
+
+
 .flex-container3 {
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: #0a0e27;
     padding: 65px;
+    padding-bottom: 115px;
     box-sizing: border-box;
     flex-wrap: nowrap; 
 }
 
 .nav_bar {
+    position: fixed;
+    top: 0;            
+    left: 0;           
+    z-index: 1000; 
     display: flex;
     align-items: center;
     padding: 20px;
@@ -47,8 +66,10 @@ body {
 }
 
 .nav_bar span {
-    color: white;
-    font-size: 18px;
+    color: #bfdbfe;
+    font-size: 35px;
+    font-family: 'ClashDisplay-Bold';
+    letter-spacing: 3px;
 }
 
 .nav_bar .nav_links {
@@ -332,6 +353,19 @@ html {
     height: 70px;  
 }
 
+#csharp {
+    display: flex;             
+    flex-direction: column;    
+    align-items: center;       
+    gap: 10px;                
+    width: 500px;              
+}
+
+#csharp img {
+    width: 90px;   
+    height: 90px;  
+}
+
 .frontend-langs .skill-name,
 .frontend-langs .skill-desc {
     border: none !important;
@@ -472,10 +506,19 @@ html {
     font-family: "ClashDisplay-Semibold";
 }
 
-.divider2 {
-  height: 2px;            
+.divider3 {
+  height: 2px;
+  margin-bottom: 40px;          
   background-color: #1e293b;  
   width: 100%;
+  transform: translateY(-60px);
+}
+
+.divider4 {
+  height: 2px;         
+  background-color: #1e293b;  
+  width: 50%;
+  transform: translateY(60px);
 }
 
 .footer-bar {
@@ -488,6 +531,37 @@ html {
   border-top: 2px solid #1e293b;  
   position: relative;            
   box-sizing: border-box;
+}
+
+h1.divider-text {
+    color: white;
+    font-family: 'ClashDisplay-Bold';
+    font-size: 50px;
+}
+
+h2.divider-text {
+    color: #bfdbfe;
+    font-family: 'ClashDisplay-Semibold';
+    font-size: 35px;
+}
+
+h3.divider-text {
+    color: #dbeafe;
+    font-family: 'ClashDisplay-Regular';
+    font-size: 20px;
+}
+
+.rectangle h1,
+.rectangle h2,
+.rectangle h3 {
+  margin: 8px 0;
+  transform: translateY(-25px);   
+}
+
+.rectangle h3:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 
