@@ -6,6 +6,7 @@ BS Computer Science
 
 https://jclegastoo.github.io/legasto.github.io/
 
+Steps to create Github Page
 1. Prepare Your Repository
 
 * Ensure your repository contains all website files (index.html, style.css, images, etc.).
